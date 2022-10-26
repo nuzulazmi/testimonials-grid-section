@@ -70,17 +70,22 @@ section .reviewer p:first-of-type {opacity: initial;}
     .attribution {grid-area: sixth;}
 
     main {
+        width: 1150px;
         display: grid;
         grid-template-areas:
         'first first second fifth'
         'third fourth fourth fifth'
         'sixth sixth sixth sixth';
-        gap: 20px;
-        margin: auto 10%;
-        transition: 0.5s;
+        gap: 25px;
+        transition: 0.8s;
     }
 
-    section {margin: 0;width: auto;}
+    section {
+        margin: 0;
+        width: auto;
+        background-position: top 0 right 85px;
+        transition: background-position 0.8s;
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }
